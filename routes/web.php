@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('polls', 'PollsController@index');
+Route::get('polls/{id}', 'PollsController@show');
