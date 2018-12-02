@@ -53,4 +53,8 @@ class PollsController extends Controller
     {
         return response()->json(['msg' => 'Esto es esparta'], 501);
     }
+    public  function  questions(Request $request,Poll $poll){
+        $questions=$poll->questions;
+        return response()->json($questions,200);
+    }
 }
