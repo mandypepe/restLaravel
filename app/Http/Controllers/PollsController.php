@@ -11,7 +11,9 @@ class PollsController extends Controller
 {
     public function index()
     {
-        return response()->json(Poll::get(), 200);
+        //return response()->json(Poll::get(), 200);
+        return response()->json(Poll::paginate(), 200);
+        //pudes pasarle el numero de elementos por pagina paginate(1) just 1
     }
 
     public function show($id)

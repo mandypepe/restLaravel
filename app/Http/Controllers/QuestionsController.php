@@ -16,6 +16,8 @@ class QuestionsController extends Controller
     {
         //
         return response()->json(Question::get(),200);
+        //return response()->json(Question::paginate(),200);
+
     }
 
     /**
