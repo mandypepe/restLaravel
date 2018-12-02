@@ -14,8 +14,8 @@ class Poll extends Resource
      */
     public function toArray($request)
     {
-        return ['title'=>mb_strimwidth($this->title,0,5,'...'),
+        //return ['title'=>mb_strimwidth($this->title,0,5,'...'),]; //retorna los 5 primeros elementos
+        return parent::toArray($request);
 
-            ];
     }
 }
