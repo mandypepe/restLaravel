@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
             \App\Http\Middleware\Loggin::class,
+            'httpHeaders:Bajanda Remanda ',
         ],
     ];
 
@@ -58,5 +59,6 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'httpHeaders'=>\App\Http\Middleware\HttpHeaders::class,
     ];
 }
