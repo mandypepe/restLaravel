@@ -13,7 +13,7 @@ class HttpHeaders
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next,string $text='')
+    public function handle($request, Closure $next,string $text=null)
     {
         $response= $next($request);
         $response->header('X_TDP',$text);
