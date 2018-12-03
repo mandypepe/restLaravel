@@ -42,7 +42,8 @@ class Kernel extends HttpKernel
             'bindings',
             \App\Http\Middleware\Loggin::class,
             'httpHeaders:Bajanda Remanda ',
-            \App\Http\Middleware\TokenAuth::class,
+            //\App\Http\Middleware\TokenAuth::class,
+            \App\Http\Middleware\BasicAuth::class,
 
         ],
     ];
