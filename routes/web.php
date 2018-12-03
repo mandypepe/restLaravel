@@ -18,3 +18,7 @@ Route::get('polls', 'PollsController@index');
 Route::get('polls/{id}', 'PollsController@show');
 Route::get('resp', 'QuestionsController@index');
 Route::get('resp/{ question}', 'QuestionsController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
