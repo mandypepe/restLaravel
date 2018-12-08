@@ -24,6 +24,7 @@ class SocialController extends Controller {
     {
         if($user = Socialite::driver($provider)->user()){
             dd($user);
+            redirect(route('home'));
         }else{
             return '¡¡¡Algo fue mal!!!';
         }
