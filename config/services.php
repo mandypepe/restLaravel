@@ -34,5 +34,15 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+        'client_id' => '2200465533538036',
+        'client_secret' => '1683ca72a20428c2f7400a900a0a7e85',
+        'redirect' => 'https://localhost/restLaravel/public/social/callback/facebook',
+    ],
+    'google' => [
+        'client_id' => '453500404156-lrd4re2i5rd6lai8dcsr13er6ptdgkai.apps.googleusercontent.com',
+        'client_secret' => '_Jvo74J4tBp60ti_vHDJdGYX',
+        'redirect' => 'http://localhost/restLaravel/public/social/callback/google',
+    ],
 
 ];
